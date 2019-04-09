@@ -14,10 +14,12 @@ import com.tuannv.base.baseprojectandroid.BaseApplication;
 import com.tuannv.base.baseprojectandroid.R;
 import com.tuannv.base.baseprojectandroid.base.BaseActivity;
 import com.tuannv.base.baseprojectandroid.databinding.ActivityMainBinding;
+import com.tuannv.base.baseprojectandroid.fragment.TestFragment;
 
 import androidx.annotation.Nullable;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> {
+public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> implements
+    TestFragment.ActionSwipeListener {
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
@@ -27,8 +29,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         MainViewModel viewModel = new MainViewModel(BaseApplication.getInstance(), this);
-        viewModel.fetchUserInfo();
+        //viewModel.fetchUserInfo();
         //requestCameraPermission();
+        addFragment(TestFragment.newInstance(), R.id.root_layout, "");
     }
 
     private void requestCameraPermission() {
@@ -54,5 +57,11 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
                     token.continuePermissionRequest();
                 }
             }).check();
+    }
+
+    @Override
+    public void onSwipe(boolean isSwipe) {
+        // get data action
+        Log.e("tuanbg", isSwipe + "");
     }
 }

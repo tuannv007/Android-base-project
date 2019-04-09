@@ -45,4 +45,5 @@ dependencies {
     implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
     implementation 'com.karumi:dexter:4.2.0'
     implementation 'com.amitshekhar.android:debug-db:1.0.6'
+    implementation 'com.github.nkzawa:socket.io-client:0.3.0'
 }

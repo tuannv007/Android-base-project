@@ -6,7 +6,6 @@ import android.util.Log;
 
 import com.tuannv.base.baseprojectandroid.base.BaseViewModel;
 import com.tuannv.base.baseprojectandroid.data.local.dao.LocalRepository;
-import com.tuannv.base.baseprojectandroid.data.model.Example;
 import com.tuannv.base.baseprojectandroid.data.model.Example2;
 import com.tuannv.base.baseprojectandroid.data.remote.AppApiHelperImpl;
 
