@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/story_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/story_home"/>
+
+    <item
+        android:id="@+id/story_new"
+        android:icon="@drawable/ic_fiber_new_black_24dp"
+        android:title="@string/story_new"/>
+
+    <item
+        android:id="@+id/story_done"
+        android:icon="@drawable/ic_done_all_black_24dp"
+        android:title="@string/story_done"
+        />
+
+    <item
+        android:id="@+id/story_list"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="@string/story_list"/>
+</menu>

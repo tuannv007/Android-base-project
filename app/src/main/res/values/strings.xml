@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">BaseProjectAndroid</string>
+    <string name="app_name">Truyện HH</string>
+    <string name="story_home">Trang chủ</string>
+    <string name="story_new">Truyện mới</string>
+    <string name="story_done">Tryện hoàn thành</string>
+    <string name="story_list">Thể loại</string>
 </resources>

@@ -10,4 +10,7 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@android:color/background_dark</item>
+    </style>
 </resources>
